@@ -17,3 +17,4 @@ knowledge of the Linux operating system.
 3) Lab 3 - UDP Socekts Programming
 4) Lab 4 - Introduction to Geni
 5) Lab 5 - Error Recovery with Go-Back-N ARQ Protocol
+6) Lab 6 - GENI Experiment: IPv4 Routing Basics
