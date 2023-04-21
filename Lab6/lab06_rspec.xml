@@ -1,0 +1,179 @@
+<rspec xmlns="http://www.geni.net/resources/rspec/3" xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" xmlns:tour="http://www.protogeni.net/resources/rspec/ext/apt-tour/1" xmlns:jacks="http://www.protogeni.net/resources/rspec/ext/jacks/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.geni.net/resources/rspec/3    http://www.geni.net/resources/rspec/3/request.xsd" type="request">
+<node xmlns="http://www.geni.net/resources/rspec/3" client_id="node-a">
+    <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://www.emulab.net/protogeni/jacks-stable/images/default.svg"/>
+    <sliver_type xmlns="http://www.geni.net/resources/rspec/3" name="default-vm">
+      
+    </sliver_type>
+    <services xmlns="http://www.geni.net/resources/rspec/3">
+      
+      
+      
+      
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<execute xmlns="http://www.geni.net/resources/rspec/3" command="sudo sh /gimiovs/gimibot.sh" shell="/bin/sh"/>
+<execute xmlns="http://www.geni.net/resources/rspec/3" command="sudo route del -net 192.168.0.0 netmask 255.255.0.00" shell="/bin/sh"/>
+<execute xmlns="http://www.geni.net/resources/rspec/3" command="sudo route del -net 192.168.2.8 netmask 255.255.255.252" shell="/bin/sh"/>
+<execute xmlns="http://www.geni.net/resources/rspec/3" command="sudo route del -net 192.168.2.12 netmask 255.255.255.252 gw 192.168.3.12" shell="/bin/sh"/>
+</services>
+    <interface xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-0">
+      <ip xmlns="http://www.geni.net/resources/rspec/3" address="192.168.3.10" type="ipv4" netmask="255.255.255.0"/>
+    </interface>
+    <interface xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-2">
+      <ip xmlns="http://www.geni.net/resources/rspec/3" address="192.168.1.10" type="ipv4" netmask="255.255.255.0"/>
+    </interface>
+  <site xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" id="Site 1"/>
+</node>
+<node xmlns="http://www.geni.net/resources/rspec/3" client_id="node-b">
+    <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://www.emulab.net/protogeni/jacks-stable/images/default.svg"/>
+    <sliver_type xmlns="http://www.geni.net/resources/rspec/3" name="default-vm">
+      
+    </sliver_type>
+    <services xmlns="http://www.geni.net/resources/rspec/3">
+      
+      
+      
+      
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<execute xmlns="http://www.geni.net/resources/rspec/3" command="sudo route del -net 192.168.0.0 netmask 255.255.0.0 gw 192.168.1.10" shell="/bin/sh"/>
+<execute xmlns="http://www.geni.net/resources/rspec/3" command="sudo sh /gimiovs/gimibot.sh" shell="/bin/sh"/>
+<execute xmlns="http://www.geni.net/resources/rspec/3" command="sudo route del -net 192.168.0.0 netmask 255.255.0.0 gw 192.168.1.10" shell="/bin/sh"/>
+<execute xmlns="http://www.geni.net/resources/rspec/3" command="sudo route del -net 192.168.3.12 netmask 255.255.255.252 gw 192.168.2.12" shell="/bin/sh"/>
+</services>
+    <interface xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-3">
+      <ip xmlns="http://www.geni.net/resources/rspec/3" address="192.168.1.11" type="ipv4" netmask="255.255.255.0"/>
+    </interface>
+    <interface xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-4">
+      <ip xmlns="http://www.geni.net/resources/rspec/3" address="192.168.2.11" type="ipv4" netmask="255.255.255.0"/>
+    </interface>
+  <site xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" id="Site 1"/>
+</node>
+<node xmlns="http://www.geni.net/resources/rspec/3" client_id="node-c">
+    <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://www.emulab.net/protogeni/jacks-stable/images/default.svg"/>
+    <sliver_type xmlns="http://www.geni.net/resources/rspec/3" name="default-vm">
+      
+    </sliver_type>
+    <services xmlns="http://www.geni.net/resources/rspec/3">
+      
+      
+      
+      
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<execute xmlns="http://www.geni.net/resources/rspec/3" command="sudo sh /gimiovs/gimibot.sh" shell="/bin/sh"/>
+<execute xmlns="http://www.geni.net/resources/rspec/3" command="sudo route del -net 192.168.0.0 netmask 255.255.0.0" shell="/bin/sh"/>
+<execute xmlns="http://www.geni.net/resources/rspec/3" command="sudo route del -net 192.168.1.11 netmask 255.255.255.255" shell="/bin/sh"/>
+<execute xmlns="http://www.geni.net/resources/rspec/3" command="sudo route del -net 192.168.1.10 netmask 255.255.255.255" shell="/bin/sh"/>
+</services>
+    <interface xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-1">
+      <ip xmlns="http://www.geni.net/resources/rspec/3" address="192.168.3.12" type="ipv4" netmask="255.255.255.0"/>
+    </interface>
+    <interface xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-5">
+      <ip xmlns="http://www.geni.net/resources/rspec/3" address="192.168.2.12" type="ipv4" netmask="255.255.255.0"/>
+    </interface>
+  <site xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" id="Site 1"/>
+</node>
+<link xmlns="http://www.geni.net/resources/rspec/3" client_id="link-0">
+    <interface_ref xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-0"/>
+    <interface_ref xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-1"/>
+    
+  
+<site xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" id="undefined"/>
+</link>
+<link xmlns="http://www.geni.net/resources/rspec/3" client_id="link-1">
+    <interface_ref xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-2"/>
+    <interface_ref xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-3"/>
+    
+  
+<site xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" id="undefined"/>
+</link>
+<link xmlns="http://www.geni.net/resources/rspec/3" client_id="link-2">
+    <interface_ref xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-4"/>
+    <interface_ref xmlns="http://www.geni.net/resources/rspec/3" client_id="interface-5"/>
+    
+  
+<site xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" id="undefined"/>
+</link>
+</rspec>
