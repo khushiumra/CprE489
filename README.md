@@ -7,7 +7,7 @@ how to handle network congestion. We also learned about the OSI reference model,
 at the physical, data link, network, and transport layers. While we learning about what sockets are and how to use them, we wrote programs
 where we built simple client-server applications to understand the concepts of computer networking. 
 
-This course consisted of 10 labs and 6 homework assignments, where we utilized our knowledge of the C programming language and a working
+This course consisted of 9 labs and 5 homework assignments, where we utilized our knowledge of the C programming language and a working
 knowledge of the Linux operating system.
 
 # The labs for this class were:
@@ -18,3 +18,7 @@ knowledge of the Linux operating system.
 4) Lab 4 - Introduction to Geni
 5) Lab 5 - Error Recovery with Go-Back-N ARQ Protocol
 6) Lab 6 - GENI Experiment: IPv4 Routing Basics
+7) Lab 7 - Using Cisco IOS XE to Configure Cisco Switches
+8) Lab 8 - Using Cisco IOS XE to Configure OSPF Routing
+9) Lab 9 - GENI Experiment: TCP Congestion Control Basics
+
